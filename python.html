@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>آموزش پایتون | CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+     <canvas id="matrix"></canvas>
+   
+   <header class="hed">
+         <div class="vrod">
+    <a href="login.html" class="ab">
+        <span class="login-text">ثبت نام/ورود</span>
+
+         
+         <svg class="login-icon" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+
+        </svg>
+    </a>
+</div>
+
+            <a href="javascript:void(0)" class="mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </a>
+
+             <div class="listes">
+
+            <div class="profile-info" id="pan">
+               <h3 class="profile-name">Amir</h3>
+            </div>
+
+           <a href="doreme.html" class="pn"> . دوره‌های من</a>
+           <a href="pish.html" class="pn"> . پیشرفت من</a>
+           <a href="#" class="pnp"> . خروج</a>
+
+           </div>
+
+
+                  <button id="menuBtn" class="hamburger" onclick="openDrawer()">☰</button>
+
+ 
+ <div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3>سرفصل‌ها</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link">حالت روشن</a></li>
+        <li><a href="index.html" class="lesson-link">صفحه اصلی</a></li>
+        <li><a href="#courses" class="lesson-link">لیست دوره ها</a></li>
+        <li><a href="#faq" class="lesson-link">سوالات متداوم</a></li>
+        <li><a href="about.html" class="lesson-link">درباره ما</a></li>
+        <li><a href="#social-icons" class="lesson-link">ارتباط با ما</a></li>
+        <li><a href="support.html" class="lesson-link">پشتیبانی</a></li>
+    </ul>
+</div>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+
+        <h1 class="lig">Code<span class="blu">Craft</span></h1>
+        <div class="inputs">
+           <a href="javascript:void(0)" class="jos" onclick="doSearch()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+              </svg></a>
+             <input type="text" class="inp" placeholder="چه آموزشی میخوای؟" onkeydown="if(event.key==='Enter') doSearch()">
+        </div>
+    </header>
+
+    <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>          
+          <li><a href="#courses" class="nav-link">📚 لیست دوره‌ها</a></li>
+          <li><a href="#faq" class="nav-link">❓ سوالات متداوم</a></li>
+          <li><a href="about.html" class="nav-link">👥 درباره ما</a></li>
+          <li><a href="#social-icons" class="nav-link">📩 ارتباط با ما</a></li>
+          <li><a href="support.html" class="nav-link">🛟 پشتیبانی</a></li>
+        </ul>
+    </nav>
+
+    <main class="course-page">
+
+    <section class="course-hero">
+        <div class="course-intro">
+            <i class="devicon-python-plain course-icon"></i>
+            <div class="course-info">
+                <div class="course-brand">
+                    <h2 class="CRt"><span class="lli">CodeCraft</span> | مرجع تخصصی آموزش برنامه نویسی</h2>
+                </div>
+                <h1 class="course-title">آموزش جامع <span class="blu">Python</span></h1>
+                <p class="course-desc">از صفر تا حرفه‌ای — پایتون رو به زبان ساده یاد بگیر</p>
+                <div class="course-meta">
+                    <span class="badge-free">رایگان</span>
+                    <span class="badge-no-video">✗ ویدیو</span>
+                    <span class="badge-doc">✓ داکیومنت</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+         <button id="menuBtn" class="menu-btn" onclick="openDrawer()">منو</button>
+
+ <div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3>سرفصل‌ها</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link active">جلسه ۱ — پایتون چیست؟</a></li>
+        <li><a href="python2.html" class="lesson-link">جلسه ۲ — نصب و راه‌اندازی</a></li>
+        <li><a href="#lesson3" class="lesson-link">جلسه ۳ — متغیرها</a></li>
+        <li><a href="#lesson4" class="lesson-link">جلسه ۴ — انواع داده</a></li>
+        <li><a href="#lesson5" class="lesson-link">جلسه ۵ — شرط‌ها</a></li>
+        <li><a href="#lesson6" class="lesson-link">جلسه ۶ — حلقه‌ها</a></li>
+        <li><a href="#lesson7" class="lesson-link">جلسه ۷ — توابع</a></li>
+    </ul>
+</div>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+    <div class="lesson23" id="lesson1">
+    <h2 class="lesson-title">جلسه ۱ — پایتون چیست؟</h2>
+    <div class="lesson-content">
+        <pre class="lesson-text">
+پایتون یکی از محبوب‌ترین و پرکاربردترین زبان‌های برنامه‌نویسی دنیاست.
+این زبان در سال ۱۹۹۱ توسط Guido van Rossum طراحی شد و امروز در صدها هزار پروژه واقعی استفاده میشه.
+نام پایتون از یه برنامه کمدی بریتانیایی به اسم Monty Python گرفته شده — نه از مار پایتون!
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🐍 چرا پایتون؟
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+۱. 📖 سادگی و خوانایی
+
+پایتون شبیه‌ترین زبان برنامه‌نویسی به زبان انسانه.
+کدهاش کوتاه، تمیز و قابل فهمه — حتی برای کسی که تازه شروع کرده.
+فلسفه پایتون اینه که کد باید خوانا باشه — نه پیچیده.
+
+مثال — چاپ یه متن:
+ 
+print("Hello World")  #خروجی : Hello World
+
+همین یه خط کافیه.
+در زبان‌هایی مثل Java همین کار ۵ خط کد نیاز داره.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+۲. 🌍 همه‌جا کاربرد داره
+
+پایتون تنها زبانیه که تقریباً در همه حوزه‌های برنامه‌نویسی استفاده میشه:
+
+🤖 هوش مصنوعی و یادگیری ماشین
+   → TensorFlow, PyTorch, Scikit-learn
+
+📊 علم داده و تحلیل داده
+   → Pandas, NumPy, Matplotlib
+
+🌐 توسعه وب
+   → Django, Flask, FastAPI
+
+⚙️ اتوماسیون و اسکریپت‌نویسی
+   → زمان‌بندی کارها، پردازش فایل، بات‌سازی
+
+🔐 امنیت سایبری
+   → تست نفوذ، آنالیز بدافزار
+
+🎮 بازی‌سازی
+   → Pygame
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+۳. 👥 جامعه بزرگ
+
+پایتون یکی از بزرگ‌ترین جوامع برنامه‌نویسی دنیا رو داره.
+یعنی هر سوالی داشتی، هزاران نفر قبلاً جوابش رو دادن.
+سایت‌هایی مثل Stack Overflow پر از سوال و جواب پایتونه.
+منابع آموزشی فارسی و انگلیسی زیادی هم داره.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+۴. 💰 بازار کار عالی
+
+برنامه‌نویس پایتون یکی از پردرآمدترین مشاغل فناوری اطلاعاته.
+میانگین حقوق پایتون‌کار در دنیا بالای ۱۰۰ هزار دلار در ساله.
+از استارتاپ‌های کوچیک تا غول‌های فناوری از پایتون استفاده میکنن.
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+🏢 پایتون کجا استفاده میشه؟
+
+🔵 Instagram
+   بک‌اند اصلیش با Django (فریم‌ورک پایتون) نوشته شده
+   روزانه بیش از ۵۰۰ میلیون کاربر ازش استفاده میکنن
+
+🔴 Google  
+   بخش زیادی از سرویس‌هاش با پایتون نوشته شده
+   خود Guido van Rossum سال‌ها در Google کار کرد
+
+🟣 Netflix
+   سیستم پیشنهاددهی فیلم و سریالش با پایتون کار میکنه
+
+🔵 NASA
+   برای تحلیل داده‌های فضایی و کنترل ماهواره‌ها
+
+🟠 Spotify
+   سیستم موسیقی پیشنهادی و تحلیل داده
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+📚 در این دوره چی یاد میگیری؟
+
+در این دوره از کامل‌ترین صفر شروع میکنیم:
+
+✅ جلسه ۱  → پایتون چیست؟ (همین جلسه)
+✅ جلسه ۲  → نصب پایتون و VS Code
+✅ جلسه ۳  → متغیرها و انواع داده
+✅ جلسه ۴  → ورودی و خروجی
+✅ جلسه ۵  → شرط‌ها (if / elif / else)
+✅ جلسه ۶  → حلقه‌ها (for / while)
+✅ جلسه ۷  → توابع
+✅ جلسه ۸  → لیست و تاپل
+✅ جلسه ۹  → دیکشنری و ست
+✅ جلسه ۱۰ → کار با فایل‌ها
+✅ جلسه ۱۱ → برنامه‌نویسی شیءگرا
+✅ جلسه ۱۲ → پروژه نهایی
+
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+⚡ پیش‌نیاز
+
+هیچ پیش‌نیازی لازم نیست.
+فقط یه کامپیوتر و اراده برای یادگیری کافیه.
+ما از صفر مطلق شروع میکنیم.
+        </pre>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>

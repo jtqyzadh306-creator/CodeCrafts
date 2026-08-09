@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+</head>
+<body>
+    <canvas id="matrix"></canvas>
+    <header class="hed">
+<div class="vrod">
+       <a href="login.html" class="ab" id="vro">
+    <span class="login-text">ثبت نام/ورود</span>
+
+    <svg class="login-icon" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+
+        <path d="M20 21a8 8 0 0 0-16 0"></path>
+        <circle cx="12" cy="7" r="4"></circle>
+
+    </svg>
+</a>
+</div>
+
+            <a href="javascript:void(0)" class="mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </a>
+
+            
+          <div class="listes" id="lis">
+
+            <div class="profile-info" id="pan">
+               <h3 class="profile-name">Amir</h3>
+            </div>
+
+           <a href="doreme.html" class="pn"> . دوره‌های من</a>
+           <a href="pish.html" class="pn"> . پیشرفت من</a>
+           <a href="#" class="pnp"> . خروج</a>
+
+           </div>
+
+           
+
+                  <button id="menuBtn" class="hamburger" onclick="openDrawer()">☰</button>
+
+ <div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3>سرفصل‌ها</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link" id="shab">حالت روشن</a></li>
+        <li><a href="index.html" class="lesson-link">صفحه اصلی</a></li>
+        <li><a href="#courses" class="lesson-link">لیست دوره ها</a></li>
+        <li><a href="#faq" class="lesson-link">سوالات متداوم</a></li>
+        <li><a href="about.html" class="lesson-link">درباره ما</a></li>
+        <li><a href="#social-icons" class="lesson-link">ارتباط با ما</a></li>
+        <li><a href="support.html" class="lesson-link">پشتیبانی</a></li>
+    </ul>
+</div>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+                   
+
+
+
+
+
+
+<h1 class="lig">Code<span class="blu">Craft</span></h1>
+                
+            <div class="inputs">
+               <a href="javascript:void(0)" class="jos" onclick="doSearch()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg></a>
+                <input type="text" class="inp" placeholder="چه آموزشی میخوای؟" onkeydown="if(event.key==='Enter') doSearch()">
+        </div>
+    </header>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+          <li><a href="#courses" class="nav-link">📚 لیست دوره‌ها</a></li>
+          <li><a href="#faq" class="nav-link">❓ سوالات متداوم</a></li>
+          <li><a href="about.html" class="nav-link">👥 درباره ما</a></li>
+          <li><a href="#social-icons" class="nav-link">📩 ارتباط با ما</a></li>
+          <li><a href="support.html" class="nav-link">پشتیبانی</a></li>
+        </ul>
+       </nav>
+
+       <section class="hero">
+    <div class="hero-content">
+        <span class="hero-icon">&lt;/&gt;</span>
+        <h1 class="hero-title">برنامه‌نویسی رو <span class="hero-highlight">ساده</span> یاد بگیر</h1>
+        <p class="hero-desc">با <span class="code">CodeCraft</span> از صفر تا حرفه‌ای — دوره‌های رایگان و پولی به زبان فارسی</p>
+        <div class="hero-btns">
+                        <a href="#courses" class="btn-secondary">شروع یادگیری</a>
+            <a href="#faq" class="btn-primary">نمیدونم از کجا شروع کنم</a>
+        </div>
+    </div>
+</section>
+
+<main id="courses">
+
+<div class="section-header">
+     <a href="" class="more-btn">دوره‌های بیشتر ←</a>
+  <h2 class="section-title">دوره‌های آموزشی</h2>
+</div>
+
+  <div class="courses-grid">
+
+    <div class="card reveal">
+      <i class="devicon-html5-plain card-icon"></i>
+      <h3 class="card-title">HTML</h3>
+      <p class="card-desc">پایه و اساس هر وب‌سایت — ساختار صفحات رو یاد بگیر</p>
+      <div class="card-badges">
+        <span class="badge-free">رایگان</span>
+        <span class="badge-doc">📄 داک دارد</span>
+      </div>
+      <a href="#" class="card-btn">شروع دوره ←</a>
+    </div>
+
+    <div class="card reveal">
+      <i class="devicon-css3-plain card-icon"></i>
+      <h3 class="card-title">CSS</h3>
+      <p class="card-desc">طراحی و استایل‌دهی صفحات — سایتت رو زیبا کن</p>
+      <div class="card-badges">
+        <span class="badge-free">رایگان</span>
+        <span class="badge-doc">📄 داک دارد</span>
+      </div>
+      <a href="#" class="card-btn">شروع دوره ←</a>
+    </div>
+
+    <div class="card reveal">
+      <i class="devicon-javascript-plain card-icon"></i>
+      <h3 class="card-title">JavaScript</h3>
+      <p class="card-desc">زبان اصلی وب — به سایتت جان بده</p>
+      <div class="card-badges">
+        <span class="badge-free">رایگان</span>
+        <span class="badge-doc">📄 داک دارد</span>
+      </div>
+      <a href="#" class="card-btn">شروع دوره ←</a>
+    </div>
+
+    <div class="card reveal">
+      <i class="devicon-python-plain card-icon"></i>
+      <h3 class="card-title">Python</h3>
+      <p class="card-desc">ساده‌ترین زبان برای شروع — از هوش مصنوعی تا وب</p>
+      <div class="card-badges">
+        <span class="badge-free">رایگان</span>
+        <span class="badge-doc">📄 داک دارد</span>
+      </div>
+      <a href="python.html" class="card-btn">شروع دوره ←</a>
+    </div>
+
+    <div class="card reveal ">
+      <i class="devicon-php-plain card-icon"></i>
+      <h3 class="card-title">PHP</h3>
+      <p class="card-desc">بک‌اند وب — سرور و دیتابیس رو مدیریت کن</p>
+      <div class="card-badges">
+        <span class="badge-free">رایگان</span>
+        <span class="badge-doc">📄 داک دارد</span>
+      </div>
+      <a href="#" class="card-btn">شروع دوره ←</a>
+    </div>
+
+  </div>
+
+</main>
+
+<section id="faq">
+ 
+  <div class="faq-header">
+    <h2 class="section-title">سوالات متداوم</h2>
+</div>
+
+    <div class="faq-list">
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">برنامه‌نویسی رو از کجا شروع کنم؟</summary>
+            <div class="faq-answer">
+                <pre>
+خیلی از تازه‌کارها وقتی میخوان برنامه‌نویسی یاد بگیرن، اول سراغ سخت‌ترین چیزها میرن — 
+مثلاً مستقیم میپرن سراغ هوش مصنوعی یا ساخت اپ — و بعد از چند روز کنار میذارن.
+دلیلش اینه که بدون پایه، همه چیز گیج‌کننده‌ست.
+
+قدم اول — هدفت رو مشخص کن:
+میخوای سایت بسازی؟ → HTML, CSS, JavaScript
+میخوای اپ موبایل بسازی؟ → Kotlin یا Swift
+میخوای با داده و هوش مصنوعی کار کنی؟ → Python
+هنوز مطمئن نیستی؟ → Python بهترین شروعه
+
+قدم دوم — مفاهیم پایه رو یاد بگیر:
+- متغیر چیه و چطور داده ذخیره میشه
+- شرط‌ها — if و else — چطور تصمیم‌گیری میکنن
+- حلقه‌ها — چطور یه کار رو چند بار تکرار کنیم
+- توابع — چطور کد رو مرتب و قابل استفاده کنیم
+
+قدم سوم — پروژه‌های کوچیک بساز:
+- ماشین‌حساب ساده
+- لیست کارها (Todo List)
+- تبدیل واحد (دما، ارز، و...)
+- فرم ثبت‌نام ساده
+
+نکته مهم:
+برنامه‌نویسی با خوندن یاد گرفته نمیشه — با نوشتن یاد گرفته میشه.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">چقدر طول میکشه برنامه‌نویس بشم؟</summary>
+            <div class="faq-answer">
+                <pre>
+این سوالی‌ه که خیلی‌ها میپرسن و جواب ثابتی نداره.
+
+اگه روزی ۱ ساعت تمرین کنی:
+- بعد از ۱ تا ۲ ماه: مفاهیم پایه رو میفهمی
+- بعد از ۳ تا ۶ ماه: میتونی پروژه‌های ساده بسازی
+- بعد از ۱ سال: میتونی دنبال اولین کارت بگردی
+- بعد از ۲ تا ۳ سال: برنامه‌نویس حرفه‌ای میشی
+
+چیزی که مهم‌تر از سرعت یادگیریه:
+استمرار. روزی ۳۰ دقیقه منظم، خیلی بهتره از یه روز ۵ ساعت و بعد یه هفته استراحت.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">با چه زبانی شروع کنم؟</summary>
+            <div class="faq-answer">
+                <pre>
+بر اساس هدفت انتخاب کن:
+
+طراحی وب: → HTML + CSS + JavaScript
+هوش مصنوعی و داده: → Python
+اپ اندروید: → Kotlin
+اپ iOS: → Swift
+بازی‌سازی: → C# یا C++
+
+هنوز مطمئن نیستی؟ → Python رو انتخاب کن.
+
+مهم‌ترین نکته:
+یه زبان رو انتخاب کن و بچسب بهش.
+از زبانی به زبان دیگه نپر — این یکی از رایج‌ترین اشتباهات تازه‌کاراست.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">آیا ریاضی قوی برای برنامه‌نویسی لازمه؟</summary>
+            <div class="faq-answer">
+                <pre>
+جواب کوتاه: نه — برای اکثر حوزه‌ها ریاضی پیشرفته لازم نیست.
+
+وب و اپ‌سازی: ریاضی پایه کافیه.
+هوش مصنوعی: آمار، احتمال، جبر خطی مهمن.
+بازی‌سازی: هندسه و مثلثات به کار میاد.
+امنیت: ریاضی گسسته و رمزنگاری مهمن.
+
+نتیجه:
+مهم‌تر از ریاضی، منطق و حل مسئله‌ست.
+این دو تا با تمرین برنامه‌نویسی خودشون تقویت میشن.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">آیا میتونم بدون مدرک دانشگاهی کار پیدا کنم؟</summary>
+            <div class="faq-answer">
+                <pre>
+بله — برنامه‌نویسی یکی از معدود حوزه‌هاییه که مهارت و پورتفولیو مهم‌تر از مدرکه.
+
+چطور بدون مدرک کار پیدا کنی:
+۱. چند پروژه خوب و کامل بساز
+۲. همه پروژه‌هات رو روی GitHub بذار
+۳. یه سایت پورتفولیو شخصی بساز
+۴. در جامعه‌های برنامه‌نویسی فعال باش
+۵. فریلنسری رو از همون اول شروع کن
+
+واقعیت: شرکت‌های بزرگ مثل Google و Netflix دیگه مدرک رو اجباری نمیدونن.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">تفاوت فرانت‌اند، بک‌اند و فول‌استک چیه؟</summary>
+            <div class="faq-answer">
+                <pre>
+فرانت‌اند: همون چیزیه که میبینی — طراحی، دکمه‌ها، انیمیشن‌ها.
+زبان‌ها: HTML، CSS، JavaScript
+
+بک‌اند: پشت صحنه — سرور، دیتابیس، منطق برنامه.
+زبان‌ها: Python، PHP، Node.js
+
+فول‌استک: هر دو رو بلده — میتونه یه سایت کامل بسازه.
+
+از کجا شروع کنم؟
+از فرانت‌اند — نتیجه کارت رو سریع‌تر میبینی و انگیزه‌ات بیشتر میشه.
+                </pre>
+            </div>
+        </details>
+
+        <details class="faq-item reveal">
+            <summary class="faq-question">آیا هوش مصنوعی جای برنامه‌نویس‌ها رو میگیره؟</summary>
+            <div class="faq-answer">
+                <pre>
+جواب کوتاه: نه — ولی تغییراتی ایجاد میکنه.
+
+AI چی میتونه بکنه؟
+- کدهای ساده بنویسه
+- باگ‌های رایج پیدا کنه
+- مستندات بنویسه
+
+AI چی نمیتونه بکنه؟
+- معماری سیستم پیچیده طراحی کنه
+- با مشتری ارتباط بگیره
+- تصمیم‌های خلاقانه بگیره
+
+واقعیت: برنامه‌نویس‌هایی که از AI استفاده میکنن چند برابر سریع‌تر کار میکنن.
+یاد بگیر چطور با AI کار کنی — این مهارت آینده‌ته.
+                </pre>
+            </div>
+        </details>
+
+    </div>
+</section>
+
+<footer id="footer">
+    
+    <div class="footer-content">
+
+        <div class="footer-brand">
+            <h2 class="footer-logo">
+                <span class="blu">Craft</span>Code
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#8c00ff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <polyline points="16 18 22 12 16 6"></polyline>
+                    <polyline points="8 6 2 12 8 18"></polyline>
+                </svg>
+            </h2>
+            <p class="footer-desc">مرجع تخصصی آموزش برنامه‌نویسی به زبان فارسی</p>
+        </div>
+
+        <div class="footer-links">
+            <h4 class="footer-title">دسترسی سریع</h4>
+            <ul>
+                <li><a href="#courses">لیست دوره‌ها</a></li>
+                <li><a href="#courses">مستندات</a></li>
+                <li><a href="#about">درباره ما</a></li>
+                <li><a href="#contact">ارتباط با ما</a></li>
+                <li><a href="#support">پشتیبانی</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-social">
+            <h4 class="footer-title">ما را دنبال کنید</h4>
+           <div id="social-icons">
+    <a href="https://rubika.ir/CoDecRaf" class="social-link" target="_blank">روبیکا</a>
+    <a href="https://t.me/CoadCraFt" class="social-link" target="_blank">تلگرام</a>
+    <a href="https://instagram.com/codecrafts100" class="social-link" target="_blank">اینستاگرام</a>
+</div>
+    <div class="footer-bottom">
+        <p>© ۱۴۰۴ CodeCraft — تمامی حقوق محفوظ است</p>
+    </div>
+
+</footer>
+
+</body>
+
+<script src="script.js"></script>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fa">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Supabase Test</title>
+</head>
+<body>
+
+<h2>تست ثبت نام Supabase</h2>
+
+<input type="email" id="email" placeholder="Email">
+<br><br>
+
+<input type="password" id="password" placeholder="Password">
+<br><br>
+
+<button onclick="register()">ثبت نام</button>
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
+<script>
+
+const supabaseUrl = "https://qftowgewgcbpocqvlvpm.supabase.co";
+
+const supabaseKey = "sb_publishable_-Z_jxxQk2Riv4EJustk2Gg_4yBy0Xtt";
+
+const db = window.supabase.createClient(
+    supabaseUrl,
+    supabaseKey
+);
+
+console.log(db);
+
+async function register(){
+
+    const email = document.getElementById("email").value;
+
+    const password = document.getElementById("password").value;
+
+    const { data, error } = await db.auth.signUp({
+
+        email: email,
+
+        password: password
+
+    });
+
+    console.log("DATA :", data);
+
+    console.log("ERROR :", error);
+
+    if(error){
+
+        alert(error.message);
+
+        return;
+
+    }
+
+    alert("ثبت نام موفق بود 🎉");
+
+}
+
+</script>
+
+</body>
+</html>

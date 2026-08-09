@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>پیشرفت من | CodeCraft</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+        <canvas id="matrix"></canvas>
+    <header class="hed">
+
+          <div class="vrod">
+    <a href="#" class="ab" id="vro">
+        <span class="login-text">ثبت نام/ورود</span>
+
+         
+         <svg class="login-icon" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+
+        </svg>
+    </a>
+
+          </div>
+
+            <a href="javascript:void(0)" class="mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </a>
+
+              <div class="listes">
+
+            <div class="profile-info" id="pan">
+               <h3 class="profile-name">Amir</h3>
+            </div>
+
+           <a href="doreme.html" class="pn"> . دوره‌های من</a>
+           <a href="pish.html" class="pn"> . پیشرفت من</a>
+           <a href="#" class="pnp"> . خروج</a>
+
+           </div>
+
+                  <button id="menuBtn" class="hamburger" onclick="openDrawer()">☰</button>
+
+ <div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3>سرفصل‌ها</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link" id="shab">حالت روشن</a></li>
+        <li><a href="index.html" class="lesson-link">صفحه اصلی</a></li>
+        <li><a href="#courses" class="lesson-link">لیست دوره ها</a></li>
+        <li><a href="#faq" class="lesson-link">سوالات متداوم</a></li>
+        <li><a href="about.html" class="lesson-link">درباره ما</a></li>
+        <li><a href="#social-icons" class="lesson-link">ارتباط با ما</a></li>
+        <li><a href="support.html" class="lesson-link">پشتیبانی</a></li>
+    </ul>
+</div>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+
+<h1 class="lig">Code<span class="blu">Craft</span></h1>
+                
+            <div class="inputs">
+               <a href="javascript:void(0)" class="jos" onclick="doSearch()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg></a>
+                <input type="text" class="inp" placeholder="چه آموزشی میخوای؟" onkeydown="if(event.key==='Enter') doSearch()">
+        </div>
+    </header>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>
+          <li><a href="#courses" class="nav-link">📚 لیست دوره‌ها</a></li>
+          <li><a href="#faq" class="nav-link">❓ سوالات متداوم</a></li>
+          <li><a href="about.html" class="nav-link">👥 درباره ما</a></li>
+          <li><a href="#social-icons" class="nav-link">📩 ارتباط با ما</a></li>
+          <li><a href="support.html" class="nav-link">پشتیبانی</a></li>
+        </ul>
+       </nav>
+
+       <main class="pro">
+           <div class="fil" id="fil">
+    <div class="drawer-header">
+        <h3>کاربر : <span class="Ami">Amir</span></h3>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link" id="shab">دوره های من</a></li>
+        <li><a href="index.html" class="lesson-link">پیشرفت من</a></li>
+        <li><a href="#courses" class="lesson-link" id="dele">خروج</a></li>
+    </ul>
+</div>
+
+
+    <section class="course-hero" id="prif">
+        <div class="course-intro">
+            <div class="course-info">
+                <h1 class="course-title">پیشرفت من :</h1>
+                <p class="course-desc" id="ka">پیشرفتی نداشتید !</p>
+            </div>
+        </div>
+    </section>
+
+    <a href="index.html" class="bish">شروع دوره ها</a>
+       </main>
+</body>
+<script src="script.js"></script>
+</html>

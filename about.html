@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <canvas id="matrix"></canvas>
+   
+     <header class="hed">
+         <div class="vrod">
+    <a href="login.html" class="ab">
+        <span class="login-text">ثبت نام/ورود</span>
+
+         
+         <svg class="login-icon" width="20" height="20" viewBox="0 0 24 24"
+        fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round">
+
+            <path d="M20 21a8 8 0 0 0-16 0"></path>
+            <circle cx="12" cy="7" r="4"></circle>
+
+        </svg>
+    </a>
+</div>
+
+            <a href="javascript:void(0)" class="mode">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                </svg>
+            </a>
+
+              <div class="listes">
+
+            <div class="profile-info" id="pan">
+               <h3 class="profile-name">Amir</h3>
+            </div>
+
+           <a href="doreme.html" class="pn"> . دوره‌های من</a>
+           <a href="pish.html" class="pn"> . پیشرفت من</a>
+           <a href="#" class="pnp"> . خروج</a>
+
+           </div>
+
+                  <button id="menuBtn" class="hamburger" onclick="openDrawer()">☰</button>
+
+
+ <div class="drawer" id="drawer">
+    <div class="drawer-header">
+        <h3>سرفصل‌ها</h3>
+        <button class="drawer-close" onclick="closeDrawer()">✕</button>
+    </div>
+    <ul class="lesson-list">
+        <li><a href="#lesson1" class="lesson-link">حالت روشن</a></li>
+        <li><a href="index.html" class="lesson-link">صفحه اصلی</a></li>
+        <li><a href="#courses" class="lesson-link">لیست دوره ها</a></li>
+        <li><a href="#faq" class="lesson-link">سوالات متداوم</a></li>
+        <li><a href="about.html" class="lesson-link">درباره ما</a></li>
+        <li><a href="#social-icons" class="lesson-link">ارتباط با ما</a></li>
+        <li><a href="support.html" class="lesson-link">پشتیبانی</a></li>
+    </ul>
+</div>
+<div class="drawer-overlay" id="overlay" onclick="closeDrawer()"></div>
+
+        <h1 class="lig">Code<span class="blu">Craft</span></h1>
+
+            <div class="inputs">
+              <a href="javascript:void(0)" class="jos" onclick="doSearch()"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="11" cy="11" r="8"></circle>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                  </svg></a>
+               <input type="text" class="inp" placeholder="چه آموزشی میخوای؟" onkeydown="if(event.key==='Enter') doSearch()">
+    </header>
+
+      <nav class="navbar">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">صفحه اصلی</a></li>          
+          <li><a href="#courses" class="nav-link">📚 لیست دوره‌ها</a></li>
+          <li><a href="#faq" class="nav-link">❓ سوالات متداوم</a></li>
+          <li><a href="about.html" class="nav-link">👥 درباره ما</a></li>
+          <li><a href="#" class="nav-link">📩 ارتباط با ما</a></li>
+          <li><a href="support.html" class="nav-link">🛟 پشتیبانی</a></li>
+        </ul>
+       </nav>
+
+        <main class="about-page">
+
+    <section class="about-hero">
+        <span class="hero-icon">&lt;/&gt;</span>
+        <h1 class="about-title">درباره <span class="blu">CodeCraft</span></h1>
+        <p class="about-subtitle">ما اینجاییم تا برنامه‌نویسی رو برای همه ممکن کنیم</p>
+    </section>
+
+
+    <section class="about-story">
+        <div class="about-card">
+            <h2 class="about-section-title">ما کی هستیم؟</h2>
+            <pre class="about-text">
+CodeCraft یه آکادمی آموزش برنامه‌نویسی به زبان فارسیه.
+
+ما یه تیم از برنامه‌نویس‌های علاقه‌مند هستیم که میخوایم 
+آموزش برنامه‌نویسی رو برای همه فارسی‌زبان‌ها ساده، اصولی و در دسترس کنیم.
+
+باور داریم که هر کسی با هر سطحی از دانش میتونه برنامه‌نویسی یاد بگیره —
+فقط کافیه مسیر درست رو بره و از منابع خوب استفاده کنه.
+
+CodeCraft اینجاست تا اون مسیر درست رو بهت نشون بده.
+            </pre>
+        </div>
+    </section>
+
+    <section class="about-mission">
+        <div class="about-card">
+            <h2 class="about-section-title">هدف ما</h2>
+            <pre class="about-text">
+هدف ما ساده‌ست:
+
+آموزش اصولی و کامل برنامه‌نویسی به زبان فارسی — 
+طوری که هر کسی بتونه از صفر شروع کنه و به یه برنامه‌نویس حرفه‌ای تبدیل بشه.
+
+ما میخوایم:
+- محتوای آموزشی باکیفیت و به‌روز تولید کنیم
+- مسیر یادگیری رو برات شفاف و مشخص کنیم
+- کنارت باشیم — از اولین خط کد تا اولین روز کاری
+- جامعه‌ای از برنامه‌نویس‌های فارسی‌زبان بسازیم
+            </pre>
+        </div>
+    </section>
+
+    <section class="about-why">
+        <div class="about-card">
+            <h2 class="about-section-title">چرا CodeCraft؟</h2>
+            <pre class="about-text">
+منابع آموزشی زیادی به زبان فارسی وجود داره — ولی اکثرشون یه مشکل دارن:
+یا ناقصن، یا قدیمین، یا اصولی نیستن.
+
+ما اومدیم این مشکل رو حل کنیم.
+
+در CodeCraft:
+- دوره‌ها از صفر تا پیشرفته آموزش میده — نه فقط مقدمه
+- محتوا مداوم به‌روز میشه — با تکنولوژی‌های روز دنیا
+- مستندات فارسی داریم — برای مرور سریع مفاهیم
+- پشتیبانی داریم — اگه گیر کردی تنها نیستی
+- پروژه‌محوریم — فقط تئوری نمیگیم، عملی یاد میدیم
+
+ما به کیفیت اهمیت میدیم — نه به کمیت.
+ترجیح میدیم یه دوره خوب داشته باشیم تا ده تا دوره ناقص.
+            </pre>
+        </div>
+    </section>
+
+    <section class="about-values">
+        <div class="about-card">
+            <h2 class="about-section-title">ارزش‌های ما</h2>
+            <div class="values-grid">
+                <div class="value-item">
+                    <span class="value-icon">🎯</span>
+                    <h3>اصولی بودن</h3>
+                    <p>آموزش درست از پایه — نه میانبر</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🔄</span>
+                    <h3>به‌روز بودن</h3>
+                    <p>محتوای ما با تکنولوژی روز دنیا آپدیت میشه</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">🤝</span>
+                    <h3>حمایت</h3>
+                    <p>تو تنها نیستی — کنارتیم</p>
+                </div>
+                <div class="value-item">
+                    <span class="value-icon">💡</span>
+                    <h3>عملی بودن</h3>
+                    <p>پروژه‌محور — یاد میگیری و میسازی</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+</body>
+<script src="script.js"></script>
+</html>
