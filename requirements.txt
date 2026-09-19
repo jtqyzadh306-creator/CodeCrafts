@@ -1,0 +1,14 @@
+vosk
+sounddevice
+edge-tts
+pygame
+pywin32
+psutil
+requests
+jdatetime
+Pillow
+keyboard
+screen-brightness-control
+pycaw
+comtypes
+deep-translator

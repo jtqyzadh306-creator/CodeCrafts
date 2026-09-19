@@ -166,7 +166,7 @@ if(pas) {
             ? document.getElementById('rule-special').classList.add('valid')
             : document.getElementById('rule-special').classList.remove('valid'));
     });
-}
+} 
 
 // drawer
 function openDrawer() {
@@ -201,6 +201,7 @@ function forgotPass() {
         document.getElementById('forgot-success').style.display = 'block';
     }
 }
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const modeBtn = document.querySelector('.mode');
@@ -263,7 +264,7 @@ if(themeToggle) {
     if(localStorage.getItem('theme') === 'light') {
         themeToggle.textContent = 'حالت تاریک';
     }else{
-        themeToggle.textContent = "حالت روشن"   
+        themeToggle.console()
      }
 }
 
